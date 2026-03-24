@@ -132,7 +132,7 @@
       align-items: center;
     }
     .logo img {
-      max-height: 60px;  /* adjust as needed */
+      max-height: 90px;  /* adjust as needed */
       width: auto;
       display: block;
     }
@@ -619,9 +619,10 @@
       </p>
       <div class="hero-buttons reveal">
         <a href="#contact" class="btn btn-primary">ابدأ مشروع علامتك</a>
-        <a href="https://wa.me/966500000000?text=مرحباً، أرغب بمناقشة مشروعي" class="btn btn-outline">
-          تواصل عبر واتساب
-        </a>
+        <a href="https://wa.me/213561235986?text=مرحباً، أرغب بمناقشة مشروعي" 
+   class="btn btn-outline">
+   تواصل عبر واتساب
+</a>
       </div>
     </div>
 
@@ -646,7 +647,7 @@
     <div class="container">
       <h2 class="section-title reveal">لماذا جوهر براندينغ؟</h2>
       <div class="why-grid">
-        <div class="why-item reveal"><div class="why-icon"><i class="fas fa-palette"></i></div><h3>إبداع احترافي</h3><p>تصاميم عصرية حاصلة على جوائز</p></div>
+        <div class="why-item reveal"><div class="why-icon"><i class="fas fa-palette"></i></div><h3>إبداع احترافي</h3><p>تصاميم عصرية تواكب الحاضر و المستقبل</p></div>
         <div class="why-item reveal"><div class="why-icon"><i class="fas fa-eye"></i></div><h3>رؤية استراتيجية عميقة</h3><p>تحليل دقيق للسوق والجمهور</p></div>
         <div class="why-item reveal"><div class="why-icon"><i class="fas fa-crown"></i></div><h3>تجربة عمل فاخرة</h3><p>شراكة مخصصة واهتمام شخصي</p></div>
       </div>
@@ -656,30 +657,56 @@
   </section>
 
   <!-- PROJECT INQUIRY FORM -->
-  <section id="contact" class="form-section">
-    <div class="container">
-      <h2 class="section-title reveal">ابدأ مشروعك معنا</h2>
-      <div class="luxury-form reveal">
-        <form id="luxuryForm">
-          <div class="form-group"><input type="text" name="name" placeholder="الاسم" required></div>
-          <div class="form-group"><input type="email" name="email" placeholder="البريد الإلكتروني" required></div>
-          <div class="form-group"><input type="tel" name="phone" placeholder="رقم الهاتف"></div>
-          <div class="form-group">
-            <select name="service">
-              <option value="">نوع الخدمة</option>
-              <option>تصميم الهوية البصرية</option>
-              <option>استراتيجية العلامة التجارية</option>
-              <option>تصميم الشعارات</option>
-              <option>تطوير المحتوى الإبداعي</option>
-            </select>
-          </div>
-          <div class="form-group"><textarea name="details" placeholder="تفاصيل المشروع" rows="4" required></textarea></div>
-          <button type="submit" class="btn btn-primary" style="width:100%;">إرسال الطلب</button>
-          <div id="formFeedback" class="form-message">تم إرسال طلبك بنجاح، سنتواصل معك قريباً.</div>
-        </form>
-      </div>
+  <<section id="contact" class="form-section">
+  <div class="container">
+    <h2 class="section-title reveal">ابدأ مشروعك معنا</h2>
+
+    <div class="luxury-form reveal">
+      
+      <!-- ✅ ONLY CHANGE IS HERE -->
+      <form id="luxuryForm"
+            action="mailto:mohallali761@gmail.com?subject=طلب مشروع جديد"
+            method="POST"
+            enctype="text/plain">
+
+        <div class="form-group">
+          <input type="text" name="name" placeholder="الاسم" required>
+        </div>
+
+        <div class="form-group">
+          <input type="email" name="email" placeholder="البريد الإلكتروني" required>
+        </div>
+
+        <div class="form-group">
+          <input type="tel" name="phone" placeholder="رقم الهاتف">
+        </div>
+
+        <div class="form-group">
+          <select name="service">
+            <option value="">نوع الخدمة</option>
+            <option>تصميم الهوية البصرية</option>
+            <option>استراتيجية العلامة التجارية</option>
+            <option>تصميم الشعارات</option>
+            <option>تطوير المحتوى الإبداعي</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <textarea name="details" placeholder="تفاصيل المشروع" rows="4" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%;">
+          إرسال الطلب
+        </button>
+
+        <div id="formFeedback" class="form-message">
+          تم إرسال طلبك بنجاح، سنتواصل معك قريباً.
+        </div>
+
+      </form>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- ABOUT PREMIUM EXPANDED -->
   <section id="about" class="about-premium">
@@ -687,7 +714,7 @@
       <h2 class="section-title reveal">من نحن</h2>
       <div class="about-grid">
         <div class="about-vision reveal"><h3>رؤيتنا</h3><p>نبني علامات تجارية ذات معنى وجوهر، تتجاوز الشكل إلى التأثير العميق. نؤمن بأن العلامة العظيمة تُخلد في الذاكرة.</p></div>
-        <div class="about-philosophy reveal"><h3>فلسفتنا</h3><p>العلامة التجارية ليست مجرد تصميم — إنها هندسة للإدراك. الاستراتيجية قبل الجماليات، والوضوح قبل الإبداع.</p></div>
+        <div class="about-philosophy reveal"><h3>رسالتنا</h3><p>رسالتنا هي أن نصبح المرجع الأول في الجزائر وشمال أفريقيا في مجال البراندينغ الاستراتيجي، من خلال قيادة العلامات التجارية الناشئة في بيئة ريادية أكثر نضجًا، حيث تصبح الهوية المؤسسية أداة للنمو المستدام والتموقع الإقليمي والدولي.</p></div>
       </div>
       <div class="process-steps">
         <div class="step reveal"><span class="step-number">01</span><h4>الاكتشاف والتحليل</h4><p>نغوص في سوقك وجمهورك ومنافسيك لنحدد الفرص الحقيقية.</p></div>
@@ -708,7 +735,7 @@
           <!-- Same logo used in header -->
           <img src="jawhar logo.png" alt="jaiwar SUCCESS PARTNERS" >
         </div>
-        <p>هوية فاخرة، تأثير خالد.</p>
+        
       </div>
       <div class="footer-col">
         <h4>روابط سريعة</h4>
@@ -719,17 +746,22 @@
       </div>
       <div class="footer-col">
         <h4>معلومات التواصل</h4>
-        <p><i class="fas fa-envelope" style="color:var(--gold);"></i> jawharbranding@gmail.com</p>
-        <p><i class="fas fa-phone" style="color:var(--gold);"></i> +213 561 23 59 86</p>
+        <p><i class="fas fa-envelope" style="color:var(--gold);"></i>jawharbrand88@gmail.com</p>
+        <p>
+  <i class="fas fa-phone" style="color:var(--gold);"></i>
+  <span dir="ltr">+213 561 23 59 86</span>
+</p>
         <p><i class="fas fa-map-marker-alt" style="color:var(--gold);"></i> الأغواط، الجزائر</p>
-        <p><i class="fab fa-whatsapp" style="color:var(--gold);"></i> <a href="https://wa.me/966500000000">واتساب</a></p>
-      </div>
+<p>
+  <i class="fab fa-whatsapp" style="color:var(--gold);"></i> 
+  <a href="https://wa.me/213561235986">واتساب</a>
+</p>      </div>
       <div class="footer-col">
         <h4>تابعنا</h4>
         <div class="social-icons">
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#"><i class="fab fa-behance"></i></a>
+          <a href="https://www.instagram.com/jawharbrand88/?__pwa=1"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/jawhar-branding-2757163b2/"><i class="fab fa-linkedin-in"></i></a>
+          
         </div>
       </div>
     </div>
