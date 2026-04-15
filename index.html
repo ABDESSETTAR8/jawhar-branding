@@ -694,12 +694,10 @@
 
     <div class="luxury-form reveal">
       
-      <form id="luxuryForm"
-            action="https://formspree.io/f/xvzdzgqy"
-            method="POST">
+      <form action="https://formspree.io/f/xvzdzgqy" method="POST">
 
         <div class="form-group">
-          <input type="text" name="الاسم" placeholder="الاسم" required>
+          <input type="text" name="Name" placeholder="الاسم" required>
         </div>
 
         <div class="form-group">
@@ -707,21 +705,21 @@
         </div>
 
         <div class="form-group">
-          <input type="tel" name="الهاتف" placeholder="رقم الهاتف">
+          <input type="tel" name="Phone" placeholder="رقم الهاتف">
         </div>
 
         <div class="form-group">
-          <select name="الخدمة">
+          <select name="Service">
             <option value="">نوع الخدمة</option>
-            <option>تصميم الهوية البصرية</option>
-            <option>استراتيجية العلامة التجارية</option>
-            <option>تصميم الشعارات</option>
-            <option>تطوير المحتوى الإبداعي</option>
+            <option value="Visual Identity">تصميم الهوية البصرية</option>
+            <option value="Brand Strategy">استراتيجية العلامة التجارية</option>
+            <option value="Logo Design">تصميم الشعارات</option>
+            <option value="Creative Content">تطوير المحتوى الإبداعي</option>
           </select>
         </div>
 
         <div class="form-group">
-          <textarea name="تفاصيل_المشروع" placeholder="تفاصيل المشروع" rows="4" required></textarea>
+          <textarea name="message" placeholder="تفاصيل المشروع" rows="4" required></textarea>
         </div>
 
         <button type="submit" class="btn btn-primary" style="width:100%;">
