@@ -686,14 +686,16 @@
   </div>
 </section>
 
-<section id="contact" class="form-section">
+  <!-- PROJECT INQUIRY FORM -->
+
+  <section id="contact" class="form-section">
   <div class="container">
     <h2 class="section-title reveal">ابدأ مشروعك معنا</h2>
 
     <div class="luxury-form reveal">
       
       <form id="luxuryForm"
-            action="https://formspree.io/f/xvzdzgqy"
+            action="https://formspree.io/f/yourID"
             method="POST">
 
         <div class="form-group">
@@ -711,10 +713,10 @@
         <div class="form-group">
           <select name="service">
             <option value="">نوع الخدمة</option>
-            <option value="Visual Identity">تصميم الهوية البصرية</option>
-            <option value="Brand Strategy">استراتيجية العلامة التجارية</option>
-            <option value="Logo Design">تصميم الشعارات</option>
-            <option value="Creative Content">تطوير المحتوى الإبداعي</option>
+            <option>تصميم الهوية البصرية</option>
+            <option>استراتيجية العلامة التجارية</option>
+            <option>تصميم الشعارات</option>
+            <option>تطوير المحتوى الإبداعي</option>
           </select>
         </div>
 
@@ -722,63 +724,21 @@
           <textarea name="details" placeholder="تفاصيل المشروع" rows="4" required></textarea>
         </div>
 
-        <button type="submit" id="submitBtn" class="btn btn-primary" style="width:100%;">
+        <!-- Optional redirect -->
+        <input type="hidden" name="_redirect" value="https://jawharbranding.com/thank-you.html">
+
+        <!-- Anti-spam -->
+        <input type="text" name="_gotcha" style="display:none">
+
+        <button type="submit" class="btn btn-primary" style="width:100%;">
           إرسال الطلب
         </button>
-
-        <div id="formFeedback" class="form-message" style="display:none; margin-top: 15px; color: #28a745; text-align: center;">
-          تم إرسال طلبك بنجاح، سنتواصل معك قريباً.
-        </div>
 
       </form>
     </div>
   </div>
 </section>
-
-<script>
-  const form = document.getElementById("luxuryForm");
-  const feedback = document.getElementById("formFeedback");
-  const button = document.getElementById("submitBtn");
-
-  async function handleSubmit(event) {
-    event.preventDefault();
-    button.disabled = true;
-    button.innerText = "جاري الإرسال...";
-    
-    const data = new FormData(event.target);
-    
-    fetch(event.target.action, {
-      method: form.method,
-      body: data,
-      headers: {
-        'Accept': 'application/json'
-      }
-    }).then(response => {
-      if (response.ok) {
-        feedback.style.display = "block";
-        form.reset();
-        button.style.display = "none"; // Hide button after success
-      } else {
-        response.json().then(data => {
-          if (Object.hasOwn(data, 'errors')) {
-            alert(data["errors"].map(error => error["message"]).join(", "));
-          } else {
-            alert("عذراً، حدث خطأ أثناء الإرسال.");
-          }
-        });
-      }
-    }).catch(error => {
-      alert("عذراً، هناك مشكلة في الاتصال بالخادم.");
-    }).finally(() => {
-      if (feedback.style.display === "none") {
-        button.disabled = false;
-        button.innerText = "إرسال الطلب";
-      }
-    });
-  }
   
-  form.addEventListener("submit", handleSubmit);
-</script>
   <!-- ABOUT PREMIUM EXPANDED -->
   <section id="about" class="about-premium">
     <div class="container">
